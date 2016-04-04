@@ -10,7 +10,7 @@ class OnCreatedHandler(PatternMatchingEventHandler):
         S3_SECRET_KEY="<YOURS3SECRETSKEY>"
         S3_BUCKET="website" 
         S3_DIRECTORY="/images" #S3 Directory inside S3_BUCKET (.../website/images)
-        PATH_DST="/Users/hsalinas/Desktop/tmp" # Optional: Directory 
+        PATH_DST="/Users/username/tmp" # Optional: Directory 
         conn = tinys3.Connection(S3_ACCESS_KEY,S3_SECRET_KEY)       
         logging.info('Uploading File: %s',event.src_path)
         f = open(event.src_path,'rb')
